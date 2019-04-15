@@ -72,6 +72,7 @@ input, select, textarea {
 	appearance: none;
 }
 
+
 /* Basic */
 
 	@-ms-viewport {
@@ -3642,6 +3643,72 @@ input, select, textarea {
 			width: 55em;
 		}
 
+			.wrapper .inner .carousel {
+					width: 100%;
+					height: 500px;
+					position: relative;
+					overflow: hidden;
+					margin: 16px 0;
+					/* background: white; */
+					color: black;
+					/* display: flex; */
+					/* justify-content: center; */
+					text-align: center;
+					padding: 1%;
+					flex-wrap: nowrap;
+					}
+					.carousel-content {
+						position: absolute;
+					}
+					.container {
+						margin: 1%;
+						color: white;
+					}
+					.wrapper .inner .carousel a {
+						border: .5px solid grey;
+						padding: 1%;
+						border-radius: 20px;
+					}
+					.wrapper .inner .carousel a:hover {
+						cursor: pointer;
+					}
+					.left-button, .right-button {
+					  display: flex;
+					  justify-content: center;
+					  align-items: center;
+					  flex-direction: row;
+					  z-index: 10;
+					  color: white;
+					  text-emphasis: bold;
+					  background-color:none;
+					  font-size: 40px;
+					  border: 2px solid rgba(255, 255, 255, 0.125);
+					  border-radius: 50%;
+					  position: absolute;
+					  width: 50px;
+					  height: 50px;
+					  cursor: pointer;
+					}
+					.left-button {
+					  top: 35%; 
+					  left: 25px;
+					  transform: translate(0, -50%);
+					}
+					.right-button {
+					  top: 35%; 
+					  right: 25px;
+					  transform: translate(0, -50%);
+					}
+					.wrapper .inner .carousel img {
+					  width: 250px;
+					  border-radius: 100%;
+					  height: auto;
+					  padding: 1%;
+					  height: auto;
+					  /* position: absolute; */
+					}
+				  
+
 		.wrapper.style2 {
 			background-color: #353849;
 		}
@@ -4108,3 +4175,5 @@ input, select, textarea {
 		}
 
 	}
+
+	
