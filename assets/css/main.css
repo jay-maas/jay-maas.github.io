@@ -3703,8 +3703,21 @@ input, select, textarea {
 					  border-radius: 100%;
 					  height: auto;
 					  padding: 1%;
-					  height: auto;
 					  /* position: absolute; */
+					}
+					@media screen and (max-width: 500px) {
+						.carousel {
+							height: 1000px;
+							overflow: auto;
+						}
+						.left-button {
+							left:0;
+							top: 40%;
+						}
+						.right-button {
+							right:0;
+							top: 40%;
+						}
 					}
 				  
 
