@@ -5,9 +5,10 @@ class Carousel {
         this.nextButton = this.carousel.querySelector(".right-button");
         this.slides = this.carousel.querySelectorAll(".carousel-content");
         this.slides = Array.from(this.slides);
-        this.slides.forEach(slide=>slide.style.zIndex = 1);
+        this.slides.forEach(slide=>slide.style.zIndex = 0);
         this.slides.forEach(slide=>slide.style.opacity = 0);
         this.slides[0].style.opacity = 1;
+        this.slides[0].style.zIndex = 1;
         this.counter = 0;
         this.slidesLength = this.slides.length;
         this.slidesIndex = this.slides[this.counter]
